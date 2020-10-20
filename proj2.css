@@ -1,0 +1,285 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #eee;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+}
+.landingPage {
+  min-height: 150vh;
+  background-image: url("images/13.jpg");
+  background-size: cover;
+  position: relative;
+}
+.landingPage .overLay {
+  background-color: #00000080;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+/* Start Header Area*/
+.headerArea {
+  position: relative;
+  z-index: 2;
+  color: white;
+  display: flex;
+  padding: 8px;
+}
+.headerArea .logo {
+  width: 300px;
+  padding: 15px;
+  font-weight: bold;
+}
+.headerArea .links {
+  list-style: none;
+  text-align: right;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 20px;
+  font-weight: 15px;
+}
+.headerArea .links li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.headerArea .links li a {
+  color: white;
+  text-decoration: none;
+}
+.headerArea .links li a .home {
+  font-size: 20px;
+  font-weight: bold;
+}
+.headerArea .links li a:hover,
+.headerArea .links li a.active {
+  color: rgb(243, 101, 0);
+}
+.introductionText {
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 2;
+  position: absolute;
+  margin-top: -160px;
+}
+.introductionText h1 {
+  font-size: 35px;
+  color: white;
+}
+.introductionText h1 span {
+  color: rgb(243, 101, 0);
+}
+.introductionText p {
+  color: white;
+  line-height: 1.4;
+  font-size: 20px;
+}
+/* End Header Area*/
+
+/* start About us  */
+.about-us {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  margin: 0;
+  top: 0;
+}
+.about-us .info-box {
+  flex: 1;
+  margin-top: 20px;
+}
+.about-us .info-box h2 {
+  font-weight: bold;
+  color: rgb(243, 101, 0);
+  font-size: 30px;
+}
+.about-us .info-box p {
+  line-height: 1.5;
+  color: #3e3d3d;
+}
+.about-us .image-box {
+  flex: 1;
+  text-align: center;
+  margin-left: 306px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+/*End About Us*/
+
+/*Start Our Skills*/
+.skills {
+  background-color: #eee;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.skills h2 {
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(243, 101, 0);
+  font-size: 30px;
+  top: 0;
+}
+.skills .skill-box {
+  background-color: #fff;
+  display: flex;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.skills .skill-box .skill-name {
+  font-weight: bold;
+  width: 100px;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 19px;
+}
+.skills .skill-box .skill-progress {
+  width: 100%;
+  height: 30px;
+  background-color: #f6f6f6;
+  position: relative;
+  display: flex;
+}
+.skills .skill-box .skill-progress span {
+  position: absolute;
+  width: 60%;
+  background-color: rgb(243, 101, 0);
+  height: 100%;
+  overflow: hidden;
+  border-radius: 6px;
+}
+/*End Our Skills*/
+
+/*Start Gallery*/
+.gallery {
+  background-color: #eee;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  text-align: center;
+}
+.gallery h2 {
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(243, 101, 0);
+  font-size: 30px;
+}
+.gallery .images-box {
+  text-align: center;
+  display: inline-block;
+}
+.gallery .images-box img {
+  width: 200px;
+  height: 120px;
+  padding: 3px;
+  margin: 3px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+/*End Gallery*/
+
+/*Start Contact Us*/
+.contat-us .container {
+  text-align: center;
+  width: 1100px;
+
+  margin: auto;
+}
+.contat-us .container h2 {
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(243, 101, 0);
+  font-size: 30px;
+}
+.contat-us .container .left,
+.contat-us .container .right {
+  width: 50%;
+  display: block;
+}
+.contat-us .container .left {
+  float: left;
+}
+.contat-us .container .right {
+  float: right;
+}
+.contat-us .container .left input {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-left: 200px;
+  margin-bottom: 5px;
+  padding: 5px;
+  width: 60%;
+  font-size: 17px;
+}
+
+.contat-us .container .right textarea {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  margin-right: 200px;
+  padding: 5px;
+  width: 60%;
+  font-size: 17px;
+  height: 132px;
+  resize: none;
+}
+.contat-us .container .left input:focus,
+.contat-us .container .right textarea:focus {
+  outline-color: rgb(152, 152, 187);
+}
+.contat-us .container button {
+  left: 0;
+  background-color: rgb(243, 101, 0);
+  color: white;
+  border-radius: 5px;
+  margin-top: 30px;
+  padding: 8px;
+  font-size: 17px;
+  width: 90px;
+  border: 2px solid #ccc;
+  cursor: pointer;
+}
+
+/*End Contact Us*/
+
+/*Start Footer*/
+footer div {
+  background-color: #544b4b;
+  color: #ccc;
+  text-align: center;
+  margin-top: 100px;
+  padding: 10px;
+}
+/*End Footer*/
+
+/*Start Grid System */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+/*End Grid System*/
